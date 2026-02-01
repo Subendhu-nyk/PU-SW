@@ -13,7 +13,7 @@ import storage from 'redux-persist/lib/storage'; // LocalStorage as the storage 
 
 // Import individual reducers (from slices)
 // These imports are currently commented out, but they would normally import the reducer functions exported from your slice files.
-// import ThemeReducer from '../features/ThemeReducer/themeSlice.js';
+import ThemeReducer from '../../features/themeReducer/themeSlice';
 // import DashboardReducer from '../features/DashboardSlice/DashboardSlice';
 // import TokenReducer from '../features/SystemConfigurationReducers/TokenReducer/tokenSlice';
 
@@ -44,7 +44,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   // These lines are commented out, but this is where you map state keys to reducers.
   // e.g., 'theme: ThemeReducer' would mean state.theme is managed by ThemeReducer.
-  //   theme: ThemeReducer,
+    theme: ThemeReducer,
   //   dashboard: DashboardReducer,
   //   token: TokenReducer,
 });
