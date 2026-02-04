@@ -1,121 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Search, Globe } from "lucide-react";
-import logo from "@/assets/images/logo.png";
+import logo2 from "@/assets/images/logo2.png";
 import { navLinks } from "@/shared/constants/constantData";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-    // const navLinks = [
-    //     {
-    //         name: "WHO WE ARE",
-    //         href: "#",
-    //         hasDropdown: true,
-    //         submenu: {
-    //             columns: [
-    //                 {
-    //                     links: [
-    //                         { name: "Our leadership", href: "#" },
-    //                         { name: "Careers", href: "#" },
-    //                         { name: "Research and resources", href: "#" },
-    //                         { name: "Blog", href: "#" },
-    //                         { name: "Press room", href: "#" },
-    //                     ]
-    //                 },
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         name: "WHAT WE DO",
-    //         href: "#",
-    //         hasDropdown: true,
-    //         submenu: {
-    //             columns: [
-    //                 {
-    //                     links: [
-    //                         { name: "Emergency response", href: "#" },
-    //                         { name: "Food and nutrition", href: "#" },
-    //                         { name: "Water, sanitation, and hygiene", href: "#" },
-    //                         { name: "Climate", href: "#" },
-    //                         { name: "Ventures", href: "#", highlight: false },
-    //                         // { name: "View all", href: "#", accent: true },
-    //                     ]
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         name: "WHERE WE WORK", href: "#", hasDropdown: true,
-    //         submenu: {
-    //             columns: [
-    //                 {
-    //                     links: [
-    //                         { name: "Africa", href: "#" },
-    //                         { name: "Asia", href: "#" },
-    //                         { name: "Europe", href: "#" },
-    //                         { name: "Latin America", href: "#" },
-    //                         { name: "Middle East", href: "#" },
-    //                     ]
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         name: "TAKE ACTION",
-    //         href: "#",
-    //         hasDropdown: true,
-    //         submenu: {
-    //             columns: [
-    //                 {
-    //                     links: [
-    //                         { name: "Give monthly", href: "#" },
-    //                         { name: "Make a donation", href: "#" },
-    //                         { name: "Take a stand", href: "#" },
-    //                         { name: "Send a card", href: "#" },
-    //                         { name: "Partner with us", href: "#" },
-    //                         // { name: "View all", href: "#", accent: true },
-    //                     ]
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         name: "GET INVOLVED",
-    //         href: "#",
-    //         hasDropdown: true,
-    //         submenu: {
-    //             columns: [
-    //                 {
-    //                     links: [
-    //                         { name: "Volunteer", href: "#" },
-    //                         { name: "Join a chapter", href: "#" },
-    //                         { name: "Campus outreach", href: "#" },
-    //                         { name: "Events", href: "#" },
-    //                     ]
-    //                 },
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         name: "LATEST",
-    //         href: "#",
-    //         hasDropdown: true,
-    //         submenu: {
-    //             columns: [
-    //                 {
-    //                     links: [
-    //                         { name: "Press releases", href: "#" },
-    //                         { name: "Blog posts", href: "#" },
-    //                         { name: "Reports", href: "#" },
-    //                         // { name: "View all", href: "#", accent: true },
-    //                     ]
-    //                 },
-    //             ]
-    //         }
-    //     },
-    // ];
-
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm">
             <div className="w-full px-6 py-3">
@@ -123,7 +13,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <a href="#" className="flex items-center gap-3 pl-2">
 
-                        <img src={logo} alt="Logo" className="h-20 w-auto" />
+                        <img src={logo2} alt="Logo" className="h-20 w-auto" />
 
                         <span className="font-heading text-xl font-bold tracking-wide">
                             PUNYA <span className="font-normal">UTKAL</span>
