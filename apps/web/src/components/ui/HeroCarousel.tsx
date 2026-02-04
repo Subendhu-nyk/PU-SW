@@ -39,9 +39,9 @@ const HeroCarousel = () => {
 
           {/* Content */}
           <div className="relative h-full flex items-center">
-            <div className="container mx-auto px-4 lg:px-16">
-              <div className="max-w-4xl">
-                <h1 className="font-heading text-5xl md:text-5xl font-bold text-white leading-none mb-2">
+            <div className="container mx-auto px-4 lg:px-16 py-4 md:py-0">
+              <div className="max-w-4xl ">
+                <h1 className="font-heading text-5xl md:text-5xl font-bold text-white leading-none my-2">
                   {slide.title}
                 </h1>
                 {/* Highlight with per-line wipe backgrounds */}
@@ -76,7 +76,7 @@ const HeroCarousel = () => {
                       : String(slide.highlight).split("\n")
                     ).map((line, i) => (
                       <div key={`${slide.id}-static-${i}`} className="leading-none">
-                        <span className="font-heading text-5xl md:text-6xl font-bold text-white">
+                        <span className="font-heading text-5xl md:text-6xl font-bold text-white ">
                           {line}
                         </span>
                       </div>
@@ -103,14 +103,14 @@ const HeroCarousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 text-white/80 hover:text-white transition-colors"
+        className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 p-2 text-white/80 hover:text-white transition-colors"
         aria-label="Previous slide"
       >
         <ChevronLeft className="w-10 h-10" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 text-white/80 hover:text-white transition-colors"
+        className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 p-2 text-white/80 hover:text-white transition-colors"
         aria-label="Next slide"
       >
         <ChevronRight className="w-10 h-10" />

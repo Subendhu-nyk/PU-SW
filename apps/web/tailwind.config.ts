@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         heading: ["Oswald", "sans-serif"],
         body: ["Source Sans Pro", "sans-serif"],
+        serifNoto: ['"Noto Serif"', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        merriweather: ['Merriweather', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
