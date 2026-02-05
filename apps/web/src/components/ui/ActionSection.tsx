@@ -1,69 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const actions = [
-    {
-        id: 1,
-        title: "SUPPORT EDUCATION FOR EVERY CHILD",
-        description:
-            "Access to education can change a life. Help children learn, grow, and build a hopeful future with dignity.",
-        tag: "Trending",
-        signatures: null,
-        image:
-            "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1600&q=80",
-    },
-    {
-        id: 2,
-        title: "STAND WITH FAMILIES IN NEED",
-        description:
-            "Many families struggle for basic necessities. Your support brings care, relief, and renewed strength.",
-        tag: null,
-        signatures: "11,105",
-        image:
-            "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80",
-    },
-    {
-        id: 3,
-        title: "CARE FOR OUR ELDERLY WITH DIGNITY",
-        description:
-            "Elders deserve respect, comfort, and companionship at every stage of life.",
-        tag: null,
-        signatures: "10,827",
-        image:
-            "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1600&q=80",
-    },
-    {
-        id: 4,
-        title: "PRESERVE ODIA LANGUAGE & CULTURE",
-        description:
-            "Our heritage defines who we are. Help protect Odia traditions, literature, and values for generations to come.",
-        tag: "Trending",
-        signatures: null,
-        image:
-            "https://images.unsplash.com/photo-1548013146-72479768bada?w=1600&q=80",
-    },
-    {
-        id: 5,
-        title: "BUILD STRONGER COMMUNITIES",
-        description:
-            "Community welfare creates lasting change. Together, we can uplift lives and strengthen Odisha.",
-        tag: null,
-        signatures: "8,432",
-        image:
-            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80",
-    },
-    {
-        id: 6,
-        title: "JOIN HANDS TO CREATE IMPACT",
-        description:
-            "Every action counts. Volunteers and supporters together turn compassion into meaningful change.",
-        tag: null,
-        signatures: "11,105",
-        image:
-            "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=1600&q=80",
-    },
-];
-
+import { actionsSectionData } from "@/shared/constants/constantData";
 
 const ActionSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -75,7 +12,8 @@ const ActionSection = () => {
         return () => window.removeEventListener("resize", check);
     }, []);
     const itemsPerView = 3;
-    const maxIndex = Math.max(0, actions.length - itemsPerView);
+    
+    const maxIndex = Math.max(0, actionsSectionData.length - itemsPerView);
 
     const handlePrev = () => setCurrentIndex((prev) => Math.max(0, prev - itemsPerView));
     const handleNext = () => setCurrentIndex((prev) => Math.min(maxIndex, prev + itemsPerView));
@@ -120,7 +58,7 @@ const ActionSection = () => {
                                     : { transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }
                             }
                         >
-                            {actions.map((action, idx) => {
+                            {actionsSectionData.map((action, idx) => {
                                 const isFirstInRow = idx % itemsPerView === 0;
 
                                 return (
