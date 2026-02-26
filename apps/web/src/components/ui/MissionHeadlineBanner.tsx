@@ -1,35 +1,27 @@
 import { useState, useEffect } from "react";
 import { Heart, HeartHandshake } from "lucide-react";
 import Konark_chakra from "@/assets/images/Konark_chakra.jpg";
+import { MissionHeadline } from "@/shared/constants/constantData";
 // const missionLines = [
 //     { text: "every child deserves care & education.", duration: 700, cta: null },
 //     { text: "compassion strengthens families and communities.", duration: 1100, cta: null },
 //     { text: "together, we can build a stronger Odisha—through service and culture.", duration: 1600, cta: "Our mission »" },
 // ];
 
-const missionLines = [
-    { text: "every child deserves care & education.", duration: 700 },
-    { text: "compassion strengthens families and communities.", duration: 1000 },
-    { text: "dignity and respect must guide elderly care.", duration: 900 },
-    { text: "our heritage shapes our identity and future.", duration: 900 },
-    { text: "volunteers turn small acts into lasting impact.", duration: 1000 },
-    { text: "strong communities create shared progress.", duration: 900 },
-    { text: "service today builds a better tomorrow.", duration: 1000 },
-    { text: "together, we can build a stronger Odisha.", duration: 1400, cta: "Our mission »" },
-];
+
 
 const MissionHeadlineBanner = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [phase, setPhase] = useState<"visible" | "exit" | "enter">("visible");
 
     useEffect(() => {
-        const currentDuration = missionLines[currentIndex].duration;
+        const currentDuration = MissionHeadline[currentIndex].duration;
 
         const timeout = setTimeout(() => {
             setPhase("exit");
 
             setTimeout(() => {
-                setCurrentIndex((prev) => (prev + 1) % missionLines.length);
+                setCurrentIndex((prev) => (prev + 1) % MissionHeadline.length);
                 setPhase("enter");
 
                 requestAnimationFrame(() => {
@@ -83,14 +75,14 @@ const MissionHeadlineBanner = () => {
                             className="text-2xl md:text-3xl text-white/90 text-start transition-all duration-500 ease-out font-serifNoto font-normal italic"
                             style={getTransformStyle()}
                         >
-                            {missionLines[currentIndex].text}
-                            {missionLines[currentIndex].cta && (
+                            {MissionHeadline[currentIndex].text}
+                            {MissionHeadline[currentIndex].cta && (
                                 <span className="block not-italic">
                                     <a
                                         href="#"
                                         className="text-white font-semibold underline underline-offset-4 hover:text-secondary transition-colors text-lg md:text-xl"
                                     >
-                                        {missionLines[currentIndex].cta}
+                                        {MissionHeadline[currentIndex].cta}
                                     </a>
                                 </span>
                             )}

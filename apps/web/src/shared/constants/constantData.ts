@@ -390,3 +390,15 @@ export const FEATURE_ACTIONS_DATA = [
     icon: 'PiggyBank',
   },
 ];
+
+
+export const MissionHeadline = [
+    { text: "every child deserves care & education.", duration: 700 },
+    { text: "compassion strengthens families and communities.", duration: 1000 },
+    { text: "dignity and respect must guide elderly care.", duration: 900 },
+    { text: "our heritage shapes our identity and future.", duration: 900 },
+    { text: "volunteers turn small acts into lasting impact.", duration: 1000 },
+    { text: "strong communities create shared progress.", duration: 900 },
+    { text: "service today builds a better tomorrow.", duration: 1000 },
+    { text: "together, we can build a stronger Odisha.", duration: 1400, cta: "Our mission »" },
+];
