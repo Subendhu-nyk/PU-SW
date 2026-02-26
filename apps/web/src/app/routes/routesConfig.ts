@@ -35,22 +35,7 @@ const routesConfig: RouteConfig[] = [
     //   path: '/admin-dashboard',
     //   component: AdminDashboard,
     //   requiredRole: 'admin',
-    // },
-    // {
-    //   path: '/student-dashboard',
-    //   component: StudentDashboard,
-    //   requiredRole: 'student',
-    // },
-    // {
-    //   path: '/teacher-dashboard',
-    //   component: TeacherDashboard,
-    //   requiredRole: 'teacher',
-    // },
-    // {
-    //   path: '/staff-dashboard',
-    //   component: StaffDashboard,
-    //   requiredRole: 'staff',
-    // },
+    // },    
 ];
 
 export default routesConfig;

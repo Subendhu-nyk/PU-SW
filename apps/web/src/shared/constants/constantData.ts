@@ -246,7 +246,7 @@ export const slides = [
     description:
       "Creating opportunities through inclusive education, guidance, and support—so every child can grow with confidence and dignity. When kindness reaches at the right moment, it becomes a reason to smile, learn, and dream, helping families shape a better future together.",
     cta: "Spread hope »",
-    image: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1920&q=80",
+    image: "Care_Education",
   },
   {
     id: 2,
@@ -256,7 +256,7 @@ export const slides = [
     description:
       "Standing beside the poor and needy by providing care, essentials, and strength to rebuild lives with respect. Real change happens when care meets action—consistent efforts that arrive on time and lift one family, one future at a time.",
     cta: "Lend a hand »",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80",
+    image: "PRao",
   },
   {
     id: 3,
@@ -266,7 +266,7 @@ export const slides = [
     description:
       "Ensuring love, dignity, and support for elders through community care and meaningful engagement. Together, small acts of attention and shared responsibility create comfort, reduce loneliness, and remind every senior that they matter—today and always.",
     cta: "Care with dignity »",
-    image: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1920&q=80",
+    image: "Old_Age",
   },
   {
     id: 4,
@@ -276,7 +276,7 @@ export const slides = [
     description:
       "Preserving Odia language, literature, drama, and traditions to pass our cultural pride to future generations. By protecting values and preserving futures, we safeguard what shapes us—so heritage stays alive in our schools, communities, and everyday lives.",
     cta: "Preserve culture »",
-    image: "https://images.unsplash.com/photo-1548013146-72479768bada?w=1920&q=80",
+    image: "OdishaHeritage",
   },
   {
     id: 5,
@@ -286,7 +286,7 @@ export const slides = [
     description:
       "Driving social development through education, culture, and community welfare for a prosperous Odisha. Rooted in Odia values and unity, we rise together to build a stronger, kinder society—where progress is shared and no one is left behind.",
     cta: "Build together »",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1920&q=80",
+    image: "Development_Farm",
   },
   {
     id: 6,
@@ -296,7 +296,7 @@ export const slides = [
     description:
       "Powered by volunteers and supporters committed to long-term impact, not short-term help. Every contribution—big or small—adds momentum to a movement of hope and service, turning collective effort into lasting results for communities.",
     cta: "Join the mission »",
-    image: "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=1920&q=80",
+    image: "Chairman",
   },
 ];
 

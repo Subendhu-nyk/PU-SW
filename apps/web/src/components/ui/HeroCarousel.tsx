@@ -1,7 +1,21 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { slides } from "@/shared/constants/constantData";
+import OdishaHeritage from "@/assets/images/Odishaheritage.png";
+import PRao from "@/assets/images/PRao.png";
+import Development_Farm from "@/assets/images/Development_Farm.png";
+import Care_Education from "@/assets/images/Care_Education.png";
+import Old_Age from "@/assets/images/Old_Age.png";
+import Chairman from "@/assets/images/Chairman.png";
 
+const imageMap: Record<string, string> = {
+  OdishaHeritage,
+  PRao,
+  Development_Farm,
+  Care_Education,
+  Old_Age,
+  Chairman
+};
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,7 +36,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[calc(100vh-104px)] w-full overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -31,14 +45,16 @@ const HeroCarousel = () => {
         >
           {/* Background Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slide.image})` }}
+            className="absolute inset-0 bg-[length:100%_100%] bg-no-repeat bg-top"
+            style={{
+              backgroundImage: `url(${imageMap[slide.image] || slide.image})`,
+            }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
           </div>
 
           {/* Content */}
-          <div className="relative h-full flex items-center">
+          < div className="relative h-full flex items-center" >
             <div className="container mx-auto px-4 lg:px-16 py-4 md:py-0">
               <div className="max-w-4xl ">
                 <h1 className="font-heading text-5xl md:text-5xl font-bold text-white leading-none my-2">
@@ -97,7 +113,7 @@ const HeroCarousel = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div >
       ))}
 
       {/* Navigation Arrows */}
@@ -142,7 +158,7 @@ const HeroCarousel = () => {
           <polygon points="0,120 480,80 960,100 1440,60 1440,120" opacity="0.5" />
         </svg>
       </div>
-    </section>
+    </section >
   );
 };
 
