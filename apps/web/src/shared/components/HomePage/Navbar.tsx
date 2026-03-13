@@ -55,7 +55,7 @@ const Navbar = () => {
                                                                                 ? "text-primary hover:text-primary/80"
                                                                                 : subLink.highlight
                                                                                     ? "text-foreground hover:text-primary flex items-center gap-1 before:content-['>'] before:text-primary"
-                                                                                    : "text-muted-foreground hover:text-foreground"
+                                                                                    : "text-muted-foreground hover:text-primary hover:bg-primary/10 hover:ps-1  rounded-full"
                                                                                 }`}
                                                                         >
                                                                             {subLink.name}

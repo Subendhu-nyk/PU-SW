@@ -131,7 +131,7 @@ const ActionSection = () => {
                             onClick={handlePrev}
                             className="
                 absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2
-                w-14 h-14 bg-slate-900/90 hover:bg-slate-900
+                w-14 h-14 bg-[#ff9b0f] hover:bg-[#ff9b0f]/90
                 text-white flex items-center justify-center
                 transition-colors
               "
@@ -146,7 +146,7 @@ const ActionSection = () => {
                             onClick={handleNext}
                             className="
                 absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2
-                w-14 h-14 bg-slate-900/90 hover:bg-slate-900
+                w-14 h-14 bg-[#ff9b0f] hover:bg-[#ff9b0f]/90
                 text-white flex items-center justify-center
                 transition-colors
               "

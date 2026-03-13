@@ -5,6 +5,11 @@ import HeroCarousel from "@/components/ui/HeroCarousel";
 import Navbar from "@/shared/components/HomePage/Navbar";
 import MissionHeadlineBanner from "@/components/ui/MissionHeadlineBanner";
 import DonationSection from "@/components/ui/DonationSection";
+import SloganSection from "@/components/ui/SloganSection";
+import FeaturedStories from "@/components/ui/FeaturedStories";
+import PressRoom from "@/components/ui/PressRoom";
+import SubscriptionSection from "@/components/ui/SubscriptionSection";
+import Footer from "@/shared/components/HomePage/Footer";
 
 const HomePage = () => {
     return (
@@ -19,7 +24,12 @@ const HomePage = () => {
                 <AnniversaryHero />
                 <MissionHeadlineBanner />
                 <DonationSection />
+                <SloganSection />
+                <FeaturedStories />
+                <PressRoom />
+                <SubscriptionSection />
             </main>
+            <Footer />
         </div>
     );
 };

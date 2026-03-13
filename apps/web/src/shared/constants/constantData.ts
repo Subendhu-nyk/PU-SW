@@ -1,241 +1,99 @@
 export const navLinks = [
+  {
+    name: "WHO WE ARE",
+    href: "#",
+    hasDropdown: true,
+    submenu: {
+      columns: [
         {
-            name: "WHO WE ARE",
-            href: "#",
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        links: [
-                            { name: "Our leadership", href: "#" },
-                            { name: "Research and resources", href: "#" },
-                            { name: "Blog", href: "#" },
-                            { name: "Press room", href: "#" },
-                        ]
-                    },
-                ]
-            }
+          links: [
+            { name: "About punya utkal", href: "#" },
+            { name: "Our leadership", href: "#" },
+            { name: "Our mission & vision", href: "#" },
+            { name: "Press room", href: "#" },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    name: "WHAT WE DO",
+    href: "#",
+    hasDropdown: true,
+    submenu: {
+      columns: [
+        {
+          links: [
+            { name: "Child education", href: "#" },
+            { name: "Women empowerment", href: "#" },
+            { name: "Elderly care", href: "#" },
+            { name: "Community welfare", href: "#" },
+            { name: "Cultural preservation", href: "#" },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    name: "WHERE WE WORK",
+    href: "#",
+    hasDropdown: true,
+    submenu: {
+      columns: [
+        {
+          links: [
+            { name: "Bhubaneswar", href: "#" },
+            { name: "Cuttack", href: "#" },
+            { name: "Jajpur", href: "#" },
+            { name: "Kendrapada", href: "#" },
+          ],
         },
         {
-            name: "WHAT WE DO",
-            href: "#",
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        links: [
-                            { name: "Emergency response", href: "#" },
-                            { name: "Food and nutrition", href: "#" },
-                            { name: "Water, sanitation, and hygiene", href: "#" },
-                            { name: "Climate", href: "#" },
-                            { name: "Ventures", href: "#", highlight: false },
-                            // { name: "View all", href: "#", accent: true },
-                        ]
-                    }
-                ]
-            }
+          links: [
+            { name: "Puri", href: "#" },
+            { name: "Rourkela", href: "#" },
+            { name: "Sambalpur", href: "#" },
+            { name: "Berhampur", href: "#" },
+          ],
         },
+      ],
+    },
+  },
+  {
+    name: "TAKE ACTION",
+    href: "#",
+    hasDropdown: true,
+    submenu: {
+      columns: [
         {
-            name: "WHERE WE WORK", href: "#", hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        links: [
-                            { name: "Bhubaneswar", href: "#" },
-                            { name: "Cuttack", href: "#" },
-                            { name: "Jajpur", href: "#" },
-                            { name: "Kendrapada", href: "#" },                            
-                        ]
-                    },
-                    {
-                        links: [                           
-                            { name: "Puri", href: "#" },
-                            { name: "Rourkela", href: "#" },
-                            { name: "Sambalpur", href: "#" },
-                            { name: "Berhampur", href: "#" },
-                        ]
-                    }
-                ]
-            }
+          links: [
+            { name: "Make a donation", href: "#" },
+            { name: "Volunteer", href: "#" },
+            { name: "Partner with us", href: "#" },
+            { name: "Fundraise", href: "#" },
+          ],
         },
+      ],
+    },
+  },
+  {
+    name: "NEWS & STORIES",
+    href: "#",
+    hasDropdown: true,
+    submenu: {
+      columns: [
         {
-            name: "TAKE ACTION",
-            href: "#",
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        links: [
-                            { name: "Give monthly", href: "#" },
-                            { name: "Make a donation", href: "#" },
-                            { name: "Take a stand", href: "#" },
-                            { name: "Send a card", href: "#" },
-                            { name: "Partner with us", href: "#" },
-                            // { name: "View all", href: "#", accent: true },
-                        ]
-                    }
-                ]
-            }
+          links: [
+            { name: "Press releases", href: "#" },
+            { name: "Blog", href: "#" },
+            { name: "Events", href: "#" },
+            { name: "Impact stories", href: "#" },
+          ],
         },
-        {
-            name: "GET INVOLVED",
-            href: "#",
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        links: [
-                            { name: "Volunteer", href: "#" },
-                            { name: "Join a chapter", href: "#" },
-                            { name: "Campus outreach", href: "#" },
-                            { name: "Events", href: "#" },
-                        ]
-                    },
-                ]
-            }
-        },
-        {
-            name: "LATEST",
-            href: "#",
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        links: [
-                            { name: "Press releases", href: "#" },
-                            { name: "Blog posts", href: "#" },
-                            { name: "Reports", href: "#" },
-                            // { name: "View all", href: "#", accent: true },
-                        ]
-                    },
-                ]
-            }
-        },
-    ];
-
-    // const slides = [
-//     {
-//     id: 1,
-//     title: "HOPE BEGINS",
-//     highlight: ["WITH CARE", "&", "EDUCATION"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "Creating opportunities through inclusive education, guidance, and support—so every child can grow with confidence and dignity.",
-//     cta: "Spread hope »",
-//     image: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1920&q=80",
-//   },
-//     {
-//     id: 2,
-//     title: "SERVING HUMANITY",
-//     highlight: ["WITH", "COMPASSION"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "Standing beside the poor and needy by providing care, essentials, and strength to rebuild lives with respect.",
-//     cta: "Lend a hand »",
-//     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80",
-//   },
-//   {
-//     id: 3,
-//     title: "HONORING LIFE",
-//     highlight: ["AT EVERY STAGE"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "Ensuring love, dignity, and support for elders through community care and meaningful engagement.",
-//     cta: "Care with dignity »",
-//     image: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1920&q=80",
-//   },
-//     {
-//     id: 4,
-//     title: "ODIA HERITAGE",
-//     highlight: ["OUR IDENTITY"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "Preserving Odia language, literature, drama, and traditions to pass our cultural pride to future generations.",
-//     cta: "Preserve culture »",
-//     image: "https://images.unsplash.com/photo-1548013146-72479768bada?w=1920&q=80",
-//   },
-//     {
-//     id: 5,
-//     title: "BUILDING ODISHA",
-//     highlight: ["WITH PURPOSE"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "Driving social development through education, culture, and community welfare for a prosperous Odisha.",
-//     cta: "Build together »",
-//     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1920&q=80",
-//   },
-//   {
-//     id: 6,
-//     title: "DEDICATION THAT",
-//     highlight: ["CREATES CHANGE"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "Powered by volunteers and supporters committed to long-term impact, not short-term help.",
-//     cta: "Join the mission »",
-//     image: "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=1920&q=80",
-//   },
-
-//   {
-//     id: 7,
-//     title: "A HELPING HAND",
-//     highlight: ["A NEW", "BEGINNING"],
-//     highlightBg: "bg-orange-500",
-//     description:
-//       "When care reaches at the right moment, lives change—one family, one future at a time.",
-//     cta: "Be their strength »",
-//     image: "https://images.unsplash.com/photo-1504151932400-72d4384f04b3?w=1920&q=80",
-//   },
-//   {
-//     id: 8,
-//     title: "FROM KINDNESS",
-//     highlight: ["COMES", "HOPE"],
-//     highlightBg: "bg-lime-400",
-//     description:
-//       "Your compassion becomes a reason to smile, learn, and dream for those who need it most.",
-//     cta: "Share kindness »",
-//     image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
-//   },
-//   {
-//     id: 9,
-//     title: "ROOTED IN ODISHA",
-//     highlight: ["RISING", "TOGETHER"],
-//     highlightBg: "bg-amber-400",
-//     description:
-//       "Inspired by Odia values and unity, we work to build a stronger and more caring society.",
-//     cta: "Rise with us »",
-//     image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=1920&q=80",
-//   },
-//   {
-//     id: 10,
-//     title: "WHERE CARE",
-//     highlight: ["MEETS", "ACTION"],
-//     highlightBg: "bg-emerald-500",
-//     description:
-//       "Real change happens when intentions turn into consistent efforts and meaningful service.",
-//     cta: "Take action »",
-//     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80",
-//   },
-//   {
-//     id: 11,
-//     title: "PROTECTING VALUES",
-//     highlight: ["PRESERVING", "FUTURES"],
-//     highlightBg: "bg-rose-500",
-//     description:
-//       "By safeguarding culture, education, and humanity, we shape generations to come.",
-//     cta: "Protect tomorrow »",
-//     image: "https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?w=1920&q=80",
-//   },
-//   {
-//     id: 12,
-//     title: "TOGETHER WE",
-//     highlight: ["MAKE IT", "POSSIBLE"],
-//     highlightBg: "bg-violet-500",
-//     description:
-//       "Every contribution—big or small—joins a movement of hope, service, and shared responsibility.",
-//     cta: "Walk with us »",
-//     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80",
-//   }
-// ]
+      ],
+    },
+  },
+];
 
 export const slides = [
   {
@@ -401,4 +259,94 @@ export const MissionHeadline = [
     { text: "strong communities create shared progress.", duration: 900 },
     { text: "service today builds a better tomorrow.", duration: 1000 },
     { text: "together, we can build a stronger Odisha.", duration: 1400, cta: "Our mission »" },
+];
+
+export const footerSections = [
+  {
+    title: "Who we are",
+    links: [
+      { name: "About punya utkal", href: "#" },
+      { name: "Our leadership", href: "#" },
+      { name: "Mission & vision", href: "#" },
+      { name: "Press room", href: "#" },
+    ],
+  },
+  {
+    title: "What we do",
+    links: [
+      { name: "Child education", href: "#" },
+      { name: "Women empowerment", href: "#" },
+      { name: "Elderly care", href: "#" },
+      { name: "Community welfare", href: "#" },
+      { name: "Cultural preservation", href: "#" },
+    ],
+  },
+  {
+    title: "Take action",
+    links: [
+      { name: "Make a donation", href: "#" },
+      { name: "Volunteer", href: "#" },
+      { name: "Partner with us", href: "#" },
+      { name: "Fundraise", href: "#" },
+    ],
+  },
+  {
+    title: "News & updates",
+    links: [
+      { name: "Press releases", href: "#" },
+      { name: "Blog", href: "#" },
+      { name: "Events", href: "#" },
+      { name: "Impact stories", href: "#" },
+    ],
+  },
+];
+
+export const socialLinks = [
+        { icon: 'Twitter', href: "#", name: "Twitter" },
+        { icon: 'MessageSquare', href: "#", name: "Discord" },
+        { icon: 'Linkedin', href: "#", name: "LinkedIn" },
+        { icon: 'Instagram', href: "#", name: "Instagram" },
+        { icon: 'Youtube', href: "#", name: "YouTube" },
+    ];
+
+export const featuredStoriesData = [
+  {
+    image: "/images/story-1.jpg",
+    title: "How punya utkal is transforming child education in odisha",
+    description: "Education opens doors to opportunity and dignity. Through community support, punya utkal helps children from underserved families access learning, mentorship, and encouragement to pursue their dreams. By nurturing young minds today, we are shaping a brighter future for odisha.",
+  },
+  {
+    image: "/images/story-2.jpg",
+    title: "Empowering women through skill development",
+    description: "Women are the backbone of our communities. Punya utkal empowers women by providing vocational training, life skills education, and support networks that enable them to build confidence, earn livelihoods, and lead change. When women thrive, families and communities rise together.",
+  },
+  {
+    image: "/images/story-3.jpg",
+    title: 'Preserving culture and compassion through punya utkal initiatives',
+    description: "Culture connects generations. Punya utkal actively supports the preservation of odia language, traditions, and heritage while also caring for elders and vulnerable members of society. By honoring both people and culture, the organization keeps odisha’s spirit alive for the future.",
+  },
+];
+
+export const pressItemData = [
+    {
+        date: "January 24, 2026",
+        title: "Celebrating international women’s day with self-empowered women of our communities",
+        description: "Punya utkal proudly celebrated international women’s day by honoring and felicitating self-empowered women who inspire change in their families and communities. Through recognition, encouragement, and community support, the event highlighted the strength, resilience, and leadership of women who continue to shape a more inclusive and progressive society.",
+        linkText: "Read more",
+        isExternal: true,
+    },
+    {
+        date: "February 18, 2026",
+        title: "Punya utkal distributes daily essentials to patients and elders in leprosy ashram",
+        description: "",
+        linkText: "Read More",
+        isExternal: false,
+    },
+    {
+        date: "February 03, 2026",
+        title: "Supporting inclusive education through books for blind, deaf and mute students",
+        description: "",
+        linkText: "Read More",
+        isExternal: false,
+    },
 ];

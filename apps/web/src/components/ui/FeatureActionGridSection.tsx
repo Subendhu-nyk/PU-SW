@@ -10,17 +10,25 @@ import {
 import { FEATURE_ACTIONS_DATA } from "@/shared/constants/constantData";
 
 const ICON_MAP: Record<string, any> = {
-  HandHeart,
-  Users,
-  GraduationCap,
-  PiggyBank,
+    HandHeart,
+    Users,
+    GraduationCap,
+    PiggyBank,
 };
 
 
 const FeatureActionGridSection = () => {
     return (
-        <section className="bg-white py-24">
-            <div className="mx-auto max-w-6xl px-6">
+        <section className="relative bg-white py-24 overflow-hidden">
+            {/* Dot pattern overlay */}
+            <div
+                className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                style={{
+                    backgroundImage: "radial-gradient(circle, #000 1px, transparent 1px)",
+                    backgroundSize: "24px 24px",
+                }}
+            />
+            <div className="relative z-10 mx-auto max-w-6xl px-6">
                 <div className="text-center">
                     <p className="text-xs tracking-[0.35em] text-slate-400">
                         AWESOME FEATURE
