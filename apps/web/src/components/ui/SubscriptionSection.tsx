@@ -1,7 +1,20 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import konarkbg from "@/assets/images/konark-1.jpg";
 
-const SubscriptionSection = () => {
+interface SubscriptionSectionProps {
+    tag?: string;
+    headingLine1?: string;
+    headingLine2?: string;
+    description?: string;
+}
+
+const SubscriptionSection = ({
+    tag = "Partner With Us",
+    headingLine1 = "TOGETHER WE CAN",
+    headingLine2 = "build a stronger odisha",
+    description = "Together, we can create meaningful change across Odisha. Through education, community support, and cultural preservation, Punya Utkal works to uplift lives and strengthen society. Partner with us to bring hope, dignity, and opportunity to those who need it most.",
+}: SubscriptionSectionProps) => {
     const [firstName, setFirstName] = useState("");
     const [contactNumber, setContactNumber] = useState("");
     const [email, setEmail] = useState("");
@@ -14,35 +27,44 @@ const SubscriptionSection = () => {
 
     return (
         <section className="relative bg-[hsl(216,28%,17%)] overflow-hidden">
+            {/* Background Image */}
+            <div 
+                className="absolute inset-0 z-0 bg-cover bg-center opacity-40 bg-fixed"
+                style={{ backgroundImage: `url(${konarkbg})` }}
+            />
+
+            {/* Dark overlay to darken the background image */}
+            <div className="absolute inset-0 z-0 bg-black/40" />
+
             {/* Subtle gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-teal/20 via-transparent to-primary/80" />
+            <div className="absolute inset-0 z-0 bg-gradient-to-br from-teal/20 via-transparent to-primary/80" />
 
             {/* Dot pattern overlay */}
-            <div
+            {/* <div
                 className="absolute inset-0 opacity-[0.08]"
                 style={{
                     backgroundImage: "radial-gradient(circle, hsl(var(--primary-foreground)) 1px, transparent 1px)",
                     backgroundSize: "24px 24px",
                 }}
-            />
+            /> */}
 
             <div className="relative z-10 max-w-[700px] mx-auto px-8 py-20 md:py-28 text-center">
                 {/* Tag */}
                 <span className="inline-block text-xs font-bold uppercase tracking-[0.25em] text-white mb-5">
-                    Partner With Us
+                    {tag}
                 </span>
 
                 {/* Heading */}
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight mb-2">
-                    <span className="uppercase font-black font-serif text-5xl font-semibold tracking-tight">TOGETHER WE CAN</span>
+                    <span className="uppercase font-black font-serif text-5xl font-semibold tracking-[0.10em] tracking-tight">{headingLine1}</span>
                 </h2>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight mb-4">
-                    <span className="italic font-normal font-serif text-5xl tracking-tight">build a stronger odisha</span>
+                    <span className="italic font-normal font-serif text-5xl tracking-tight">{headingLine2}</span>
                 </h2>
 
                 {/* Description */}
-                <p className="text-primary-foreground/70 text-sm md:text-base max-w-lg mx-auto leading-relaxed font-merriweather font-light mb-10">
-                    Together, we can create meaningful change across Odisha. Through education, community support, and cultural preservation, Punya Utkal works to uplift lives and strengthen society. Partner with us to bring hope, dignity, and opportunity to those who need it most.
+                <p className="text-primary-foreground/70 text-sm md:text-base max-w-xl mx-auto leading-relaxed font-merriweather font-light mb-10">
+                    {description}
                 </p>
 
                 {/* Form */}

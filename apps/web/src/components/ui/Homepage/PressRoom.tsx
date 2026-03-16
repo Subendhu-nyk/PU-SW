@@ -1,4 +1,5 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import { pressItemData } from "@/shared/constants/constantData";
 
 
@@ -33,12 +34,12 @@ const PressRoom = () => {
                         <p className="text-foreground/70 text-sm leading-relaxed font-merriweather font-light mb-4">
                             {featuredItem.description}
                         </p>
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="inline-flex items-center gap-2 uppercase tracking-widest text-primary hover:opacity-70 transition-opacity font-merriweather font-light text-[14px] leading-[1.4]"
                         >
                             {featuredItem.linkText} <ExternalLink className="w-3.5 h-3.5" />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Side press items - ~45% */}
@@ -51,24 +52,24 @@ const PressRoom = () => {
                                 <h3 className="text-lg md:text-xl font-serif text-slate-900 leading-snug mb-3">
                                     {item.title}
                                 </h3>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="#"
                                     className="inline-flex items-center gap-2 uppercase tracking-widest text-primary hover:opacity-70 transition-opacity font-merriweather font-light text-[14px] leading-[1.4]"
                                 >
                                     {item.linkText} <ArrowRight className="w-4 h-4" />
-                                </a>
+                                </Link>
                             </div>
                         ))}
                     </div>
                 </div>
 
                 <div className="text-center mt-12">
-                    <a
-                        href="#"
+                    <Link
+                        to="#"
                         className="inline-flex items-center gap-2 uppercase tracking-widest text-primary hover:opacity-70 transition-opacity font-merriweather font-bold text-[14px] leading-[1.4]"
                     >
                         See more news ›
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

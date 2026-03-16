@@ -1,5 +1,5 @@
-import { ArrowRight, Heart } from "lucide-react";
-import { Button } from "./button";
+// import { ArrowRight, Heart } from "lucide-react";
+// import { Button } from "./../button";
 
 const SloganSection = () => {
   return (

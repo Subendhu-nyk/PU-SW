@@ -1,4 +1,5 @@
 import { Twitter, Linkedin, Instagram, Youtube, MessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo2 from "@/assets/images/logo2.png";
 import { footerSections, socialLinks } from "@/shared/constants/constantData";
 
@@ -28,12 +29,12 @@ const Footer = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-16">
                     {/* Logo and About Column */}
                     <div className="col-span-2 lg:col-span-2">
-                        <a href="#" className="flex items-center gap-2 mb-6">
+                        <Link to="/" className="flex items-center gap-2 mb-6">
                             <img src={logo2} alt="Punya Utkal Logo" className="h-12 w-auto" />
                             <span className="font-heading text-xl font-bold tracking-wide">
                                 PUNYA <span className="font-normal">UTKAL</span>
                             </span>
-                        </a>
+                        </Link>
                         <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-xs">
                             “ସତେକି ଓଡ଼ିଆ ଶୁଝିବ ଋଣ, ବିଖଣ୍ଡିତ ଲକ୍ଷ୍ୟ ହେବ ପୂରଣ
                             ଅଖଣ୍ଡ ଉତ୍କଳ ଅଖଣ୍ଡ ରହୁ, ଗଲେ ପଛେ ଏଇ ଜୀବନ ଯାଉ
@@ -65,12 +66,12 @@ const Footer = () => {
                             <ul className="space-y-4">
                                 {section.links.map((link) => (
                                     <li key={link.name}>
-                                        <a
-                                            href={link.href}
+                                        <Link
+                                            to={link.href}
                                             className="text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 hover:py-2 hover:px-1 rounded-full transition-colors duration-200 font-merriweather font-light"
                                         >
                                             {link.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

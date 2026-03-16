@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { actionsSectionData } from "@/shared/constants/constantData";
 
@@ -74,7 +75,7 @@ const ActionSection = () => {
                                                 idx !== 0 ? "border-t md:border-t-0 pt-10 md:pt-0" : "",
                                             ].join(" ")}
                                         >
-                                            <a href="#" className="group block">
+                                            <Link to="#" className="group block">
                                                 {/* Image (hover zoom OUT / slightly zoomed on hover) */}
                                                 <div className="overflow-hidden bg-white">
                                                     <img
@@ -105,7 +106,7 @@ const ActionSection = () => {
                                                             className="
                                 inline-flex items-center justify-center
                                 mt-9
-                                bg-[#d71920] text-white
+                                bg-primary text-white
                                 px-6 py-3
                                 text-[14px] font-extrabold uppercase tracking-wide
                                 relative
@@ -116,7 +117,7 @@ const ActionSection = () => {
                                                         </span>
                                                     )}
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 );
@@ -131,7 +132,7 @@ const ActionSection = () => {
                             onClick={handlePrev}
                             className="
                 absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2
-                w-14 h-14 bg-[#ff9b0f] hover:bg-[#ff9b0f]/90
+                w-14 h-14 bg-primary hover:bg-primary/90
                 text-white flex items-center justify-center
                 transition-colors
               "
@@ -146,7 +147,7 @@ const ActionSection = () => {
                             onClick={handleNext}
                             className="
                 absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2
-                w-14 h-14 bg-[#ff9b0f] hover:bg-[#ff9b0f]/90
+                w-14 h-14 bg-primary hover:bg-primary/90
                 text-white flex items-center justify-center
                 transition-colors
               "

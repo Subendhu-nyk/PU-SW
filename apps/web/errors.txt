@@ -1,0 +1,26 @@
+﻿src/components/ui/AboutPunyaUtkal/OurStorySection.tsx(1,26): error TS2307: Cannot find module '@/assets/images/Heart_Odisha.png' or its corresponding type declarations.
+src/components/ui/AnniversaryHero.tsx(2,27): error TS2307: Cannot find module '@/assets/images/Odisha_People.jpg' or its corresponding type declarations.
+src/components/ui/AnniversaryHero.tsx(3,28): error TS2307: Cannot find module '@/assets/images/Care_Education.png' or its corresponding type declarations.
+src/components/ui/DonationSection.tsx(3,26): error TS2307: Cannot find module '@/assets/images/Heart_Odisha.png' or its corresponding type declarations.
+src/components/ui/HeroCarousel.tsx(4,28): error TS2307: Cannot find module '@/assets/images/Odishaheritage.png' or its corresponding type declarations.
+src/components/ui/HeroCarousel.tsx(5,18): error TS2307: Cannot find module '@/assets/images/PRao.png' or its corresponding type declarations.
+src/components/ui/HeroCarousel.tsx(6,30): error TS2307: Cannot find module '@/assets/images/Development_Farm.png' or its corresponding type declarations.
+src/components/ui/HeroCarousel.tsx(7,28): error TS2307: Cannot find module '@/assets/images/Care_Education.png' or its corresponding type declarations.
+src/components/ui/HeroCarousel.tsx(8,21): error TS2307: Cannot find module '@/assets/images/Old_Age.png' or its corresponding type declarations.
+src/components/ui/HeroCarousel.tsx(9,22): error TS2307: Cannot find module '@/assets/images/Chairman.png' or its corresponding type declarations.
+src/components/ui/LeaderSection.tsx(2,24): error TS2307: Cannot find module '@/assets/images/hero-person.png' or its corresponding type declarations.
+src/components/ui/LeaderSection.tsx(3,22): error TS2307: Cannot find module '@/assets/images/konark-2.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(4,19): error TS2307: Cannot find module '@/assets/images/team-1.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(5,19): error TS2307: Cannot find module '@/assets/images/team-2.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(6,19): error TS2307: Cannot find module '@/assets/images/team-3.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(7,19): error TS2307: Cannot find module '@/assets/images/team-4.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(8,19): error TS2307: Cannot find module '@/assets/images/team-5.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(9,19): error TS2307: Cannot find module '@/assets/images/team-6.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(10,19): error TS2307: Cannot find module '@/assets/images/team-7.jpg' or its corresponding type declarations.
+src/components/ui/LeadershipTeamMembersSection.tsx(11,19): error TS2307: Cannot find module '@/assets/images/team-8.jpg' or its corresponding type declarations.
+src/components/ui/MissionHeadlineBanner.tsx(3,27): error TS2307: Cannot find module '@/assets/images/Konark_chakra.jpg' or its corresponding type declarations.
+src/components/ui/SubscriptionSection.tsx(3,22): error TS2307: Cannot find module '@/assets/images/konark-1.jpg' or its corresponding type declarations.
+src/shared/components/HomePage/Footer.tsx(3,19): error TS2307: Cannot find module '@/assets/images/logo2.png' or its corresponding type declarations.
+src/shared/components/HomePage/Navbar.tsx(5,19): error TS2307: Cannot find module '@/assets/images/logo2.png' or its corresponding type declarations.
+src/shared/components/HomePage/Navbar.tsx(59,211): error TS2339: Property 'accent' does not exist on type '{ name: string; href: string; }'.
+src/shared/components/HomePage/Navbar.tsx(61,91): error TS2339: Property 'highlight' does not exist on type '{ name: string; href: string; }'.

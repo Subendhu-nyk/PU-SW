@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { featuredStoriesData } from "@/shared/constants/constantData";
 
 
@@ -34,12 +35,12 @@ const FeaturedStories = () => {
               <p className="text-foreground/70 text-sm leading-relaxed font-merriweather font-light mb-4">
                 {story.description}
               </p>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="inline-flex items-center gap-2 uppercase tracking-widest text-primary hover:opacity-70 transition-opacity font-merriweather font-light text-[14px] leading-[1.4]"
               >
                 Read More <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </article>
           ))}
         </div>

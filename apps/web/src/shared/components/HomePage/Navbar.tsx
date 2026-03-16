@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Search, Globe } from "lucide-react";
 import logo2 from "@/assets/images/logo2.png";
@@ -6,19 +7,23 @@ import { navLinks } from "@/shared/constants/constantData";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null);
+    const location = useLocation();
+
+    const isActive = (path: string) => location.pathname === path;
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm">
             <div className="w-full px-6 py-3">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-3 pl-2">
+                    <Link to="/" className="flex items-center gap-3 pl-2">
 
                         <img src={logo2} alt="Logo" className="h-20 w-auto" />
 
                         <span className="font-heading text-xl font-bold tracking-wide">
                             PUNYA <span className="font-normal">UTKAL</span>
                         </span>
-                    </a>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <div className="flex items-center ml-auto">
@@ -26,15 +31,15 @@ const Navbar = () => {
 
                             {navLinks.map((link) => (
                                 <div key={link.name} className="relative group">
-                                    <a
-                                        href={link.href}
+                                    <Link
+                                        to={link.href}
                                         className="flex items-center gap-1 px-4 py-2 text-sm font-semibold tracking-wide text-foreground hover:text-primary transition-colors"
                                     >
                                         {link.name}
                                         {link.hasDropdown && (
                                             <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                                         )}
-                                    </a>
+                                    </Link>
 
                                     {/* Dropdown Submenu */}
                                     {link.hasDropdown && link.submenu && (
@@ -49,17 +54,17 @@ const Navbar = () => {
                                                             <ul className="space-y-2">
                                                                 {column.links.map((subLink, linkIndex) => (
                                                                     <li key={linkIndex}>
-                                                                        <a
-                                                                            href={subLink.href}
-                                                                            className={`block text-sm transition-colors duration-200 ${subLink.accent
+                                                                        <Link
+                                                                            to={subLink.href}
+                                                                            className={`block text-sm transition-colors duration-200 ${isActive(subLink.href) ? "text-primary bg-primary/10 ps-2" : ""} ${(subLink as any).accent
                                                                                 ? "text-primary hover:text-primary/80"
-                                                                                : subLink.highlight
+                                                                                : (subLink as any).highlight
                                                                                     ? "text-foreground hover:text-primary flex items-center gap-1 before:content-['>'] before:text-primary"
-                                                                                    : "text-muted-foreground hover:text-primary hover:bg-primary/10 hover:ps-1  rounded-full"
+                                                                                    : "text-muted-foreground hover:text-primary hover:bg-primary/10 hover:ps-1 rounded-full"
                                                                                 }`}
                                                                         >
                                                                             {subLink.name}
-                                                                        </a>
+                                                                            </Link>
                                                                     </li>
                                                                 ))}
                                                             </ul>
@@ -104,13 +109,40 @@ const Navbar = () => {
                     <div className="container mx-auto px-4 py-4">
                         {navLinks.map((link) => (
                             <div key={link.name}>
-                                <a
-                                    href={link.href}
+                                <Link
+                                    to={link.href}
+                                    onClick={(e) => {
+                                        if (link.hasDropdown) {
+                                            e.preventDefault();
+                                            setActiveMobileMenu(activeMobileMenu === link.name ? null : link.name);
+                                        } else {
+                                            setIsOpen(false);
+                                        }
+                                    }}
                                     className="flex items-center justify-between py-3 text-sm font-semibold tracking-wide text-foreground hover:text-primary transition-colors"
                                 >
                                     {link.name}
-                                    {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
-                                </a>
+                                    {link.hasDropdown && <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeMobileMenu === link.name ? "rotate-180" : ""}`} />}
+                                </Link>
+                                {/* Mobile Submenu */}
+                                {link.hasDropdown && link.submenu && activeMobileMenu === link.name && (
+                                    <div className="pl-4 pb-2 space-y-1">
+                                        {link.submenu.columns.map((column, colIndex) => (
+                                            <div key={colIndex}>
+                                                {column.links.map((subLink, linkIndex) => (
+                                                    <Link
+                                                        key={linkIndex}
+                                                        to={subLink.href}
+                                                        onClick={() => setIsOpen(false)}
+                                                        className={`block py-2 text-sm transition-colors duration-200 ${isActive(subLink.href) ? "text-primary" : "text-muted-foreground hover:text-primary"}`}
+                                                    >
+                                                        {subLink.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         ))}
                         <Button className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide">

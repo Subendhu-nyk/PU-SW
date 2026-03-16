@@ -23,6 +23,8 @@ export interface RouteConfig {
 
 // Example dashboard components (commented out until created):
 // const AdminDashboard = lazy(() => import('../../pages/Dashboard/Admin/AdminDashboard'));
+const OurLeadershipPage = lazy(() => import('../../pages/OurLeadership/OurLeadershipPage'));
+const AboutPunyaUtkalPage = lazy(() => import('../../pages/AboutPunyaUtkal/AboutPunyaUtkalPage'));
 
 // ---------------------------------------------------------------------------
 // ROUTES CONFIGURATION
@@ -30,6 +32,14 @@ export interface RouteConfig {
 // Array of route objects that will be dynamically rendered in the router.
 // Each route specifies a path, component, and optional role/permission requirements.
 const routesConfig: RouteConfig[] = [
+    {
+        path: '/our-leadership',
+        component: OurLeadershipPage,
+    },
+    {
+        path: '/about-punya-utkal',
+        component: AboutPunyaUtkalPage,
+    },
     // Example routes (uncomment when components are created):
     // {
     //   path: '/admin-dashboard',
