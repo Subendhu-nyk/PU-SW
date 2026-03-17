@@ -1,24 +1,18 @@
-import ActionSection from "@/components/ui/Homepage/ActionSection";
-import AnniversaryHero from "@/components/ui/Homepage/AnniversaryHero";
-import FeatureActionGridSection from "@/components/ui/Homepage/FeatureActionGridSection";
-import HeroCarousel from "@/components/ui/Homepage/HeroCarousel";
-import Navbar from "@/shared/components/HomePage/Navbar";
-import MissionHeadlineBanner from "@/components/ui/Homepage/MissionHeadlineBanner";
-import DonationSection from "@/components/ui/Homepage/DonationSection";
-import SloganSection from "@/components/ui/Homepage/SloganSection";
-import FeaturedStories from "@/components/ui/Homepage/FeaturedStories";
-import PressRoom from "@/components/ui/Homepage/PressRoom";
-import SubscriptionSection from "@/components/ui/SubscriptionSection";
-import Footer from "@/shared/components/HomePage/Footer";
+import HeroCarousel from "./sections/HeroCarousel";
+import MissionHeadlineBanner from "./sections/MissionHeadlineBanner";
+import ActionSection from "./sections/ActionSection";
+import FeatureActionGridSection from "./sections/FeatureActionGridSection";
+import FeaturedStories from "./sections/FeaturedStories";
+import PressRoom from "./sections/PressRoom";
+import SloganSection from "./sections/SloganSection";
+import AnniversaryHero from "./sections/AnniversaryHero";
+import DonationSection from "./sections/DonationSection";
+import SubscriptionSection from "@/shared/components/SubscriptionSection";
 
 const HomePage = () => {
     return (
-        <div className="min-h-screen">
-            <Navbar />
-            {/* Spacer for fixed navbar */}
-            <div className="h-[104px]" />
-            <main>
-                <HeroCarousel />
+        <>
+            <HeroCarousel />
                 <ActionSection />
                 <FeatureActionGridSection />
                 <AnniversaryHero />
@@ -28,9 +22,7 @@ const HomePage = () => {
                 <FeaturedStories />
                 <PressRoom />
                 <SubscriptionSection />
-            </main>
-            <Footer />
-        </div>
+        </>
     );
 };
 

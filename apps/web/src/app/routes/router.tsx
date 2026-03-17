@@ -25,8 +25,7 @@ import routesConfig from './routesConfig';
 // const AuthForm = lazy(() => import('../../pages/Auth/AuthForm'));
 
 // Main layout wrapper with Header, Sidebar, etc.
-// TODO: Create MainLayout component
-// const MainLayout = lazy(() => import('../../layouts/MainLayout'));
+import MainLayout from '@/layouts/MainLayout';
 
 // HomePage component
 const HomePage = lazy(() => import('../../pages/Home/HomePage'));
@@ -64,24 +63,26 @@ const Router: React.FC = () => {
     // Here, we show a <LoadingComponent /> (spinner) until the page is ready.
     <Suspense fallback={<LoadingComponent />}>
       <Routes>
-        
-       {/* ------------------------------------------------------------------
-            DEFAULT ROUTE
-            ------------------------------------------------------------------ */}
-   
-        <Route path='/' element={<HomePage />} />
+        {/* MainLayout Wraps all public pages */}
+        <Route element={<MainLayout />}>
+          {/* ------------------------------------------------------------------
+              DEFAULT ROUTE
+              ------------------------------------------------------------------ */}
+     
+          <Route path='/' element={<HomePage />} />
 
-        {/* ------------------------------------------------------------------
-            DYNAMIC ROUTES FROM CONFIG (without protection for now)
-            ------------------------------------------------------------------ */}
-        {/* Map over routesConfig to render routes dynamically */}
-        {routesConfig.map(({ path, component: Component }) => (
-          <Route
-            key={path}
-            path={path}
-            element={<Component />}
-          />
-        ))}
+          {/* ------------------------------------------------------------------
+              DYNAMIC ROUTES FROM CONFIG (without protection for now)
+              ------------------------------------------------------------------ */}
+          {/* Map over routesConfig to render routes dynamically */}
+          {routesConfig.map(({ path, component: Component }) => (
+            <Route
+              key={path}
+              path={path}
+              element={<Component />}
+            />
+          ))}
+        </Route>
 
         {/* ------------------------------------------------------------------
             CATCH-ALL ROUTE (404)

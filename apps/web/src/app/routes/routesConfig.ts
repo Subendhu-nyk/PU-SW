@@ -23,9 +23,9 @@ export interface RouteConfig {
 
 // Example dashboard components (commented out until created):
 // const AdminDashboard = lazy(() => import('../../pages/Dashboard/Admin/AdminDashboard'));
-const OurLeadershipPage = lazy(() => import('../../pages/OurLeadership/OurLeadershipPage'));
-const AboutPunyaUtkalPage = lazy(() => import('../../pages/AboutPunyaUtkal/AboutPunyaUtkalPage'));
-const VisionAndMissionPage = lazy(() => import('../../pages/VisionAndMission/VisionAndMissionPage'));
+const LeadershipPage = lazy(() => import('../../pages/Leadership/LeadershipPage'));
+const AboutPage = lazy(() => import('../../pages/About/AboutPage'));
+const VisionPage = lazy(() => import('../../pages/Vision/VisionPage'));
 
 // ---------------------------------------------------------------------------
 // ROUTES CONFIGURATION
@@ -35,15 +35,15 @@ const VisionAndMissionPage = lazy(() => import('../../pages/VisionAndMission/Vis
 const routesConfig: RouteConfig[] = [
     {
         path: '/our-leadership',
-        component: OurLeadershipPage,
+        component: LeadershipPage,
     },
     {
         path: '/about-punya-utkal',
-        component: AboutPunyaUtkalPage,
+        component: AboutPage,
     },
     {
         path: '/vision-and-mission',
-        component: VisionAndMissionPage,
+        component: VisionPage,
     },
     // Example routes (uncomment when components are created):
     // {
