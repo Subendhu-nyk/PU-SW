@@ -26,6 +26,7 @@ export interface RouteConfig {
 const LeadershipPage = lazy(() => import('../../pages/Leadership/LeadershipPage'));
 const AboutPage = lazy(() => import('../../pages/About/AboutPage'));
 const VisionPage = lazy(() => import('../../pages/Vision/VisionPage'));
+const WhatWeDoPage = lazy(() => import('../../pages/WhatWeDo/WhatWeDoPage'));
 
 // ---------------------------------------------------------------------------
 // ROUTES CONFIGURATION
@@ -44,6 +45,10 @@ const routesConfig: RouteConfig[] = [
     {
         path: '/vision-and-mission',
         component: VisionPage,
+    },
+    {
+        path: '/what-we-do',
+        component: WhatWeDoPage,
     },
     // Example routes (uncomment when components are created):
     // {

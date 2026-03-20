@@ -18,21 +18,8 @@ export const navLinks = [
   },
   {
     name: "WHAT WE DO",
-    href: "#",
-    hasDropdown: true,
-    submenu: {
-      columns: [
-        {
-          links: [
-            { name: "Child education", href: "#" },
-            { name: "Women empowerment", href: "#" },
-            { name: "Elderly care", href: "#" },
-            { name: "Community welfare", href: "#" },
-            { name: "Cultural preservation", href: "#" },
-          ],
-        },
-      ],
-    },
+    href: "/what-we-do",
+    hasDropdown: false,
   },
   {
     name: "WHERE WE WORK",
@@ -108,11 +95,11 @@ export const footerSections = [
   {
     title: "What we do",
     links: [
-      { name: "Child education", href: "#" },
-      { name: "Women empowerment", href: "#" },
-      { name: "Elderly care", href: "#" },
-      { name: "Community welfare", href: "#" },
-      { name: "Cultural preservation", href: "#" },
+      { name: "Child education", href: "/what-we-do" },
+      { name: "Women empowerment", href: "/what-we-do" },
+      { name: "Elderly care", href: "/what-we-do" },
+      { name: "Community welfare", href: "/what-we-do" },
+      { name: "Cultural preservation", href: "/what-we-do" },
     ],
   },
   {
