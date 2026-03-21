@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { featuredStoriesData } from "@/shared/constants/homepage.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 
 const FeaturedStories = () => {
@@ -15,6 +16,7 @@ const FeaturedStories = () => {
         }}
       />
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 md:px-12">
+        <TaglineBadge text="INSPIRE" alignment="center" />
         <h2 className="text-2xl md:text-5xl font-serif font-semibold tracking-tight text-slate-900 text-center mb-12">
           Featured stories
         </h2>

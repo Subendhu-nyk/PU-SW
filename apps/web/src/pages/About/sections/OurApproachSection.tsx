@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { HandHeart, Users, GraduationCap, Globe } from "lucide-react";
 import { OurApproachData } from "@/shared/constants/about.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const ICON_MAP: Record<string, any> = {
     HandHeart,
@@ -19,9 +20,7 @@ const OurApproachSection = () => {
           viewport={{ once: true }}
           className="mb-16 max-w-xl"
         >
-          <p className="tracking-[0.1em] text-[0.8rem] font-bold uppercase text-primary mb-4">
-            How We Work
-          </p>
+          <TaglineBadge text="How We Work" alignment="left" />
           <h2 className="font-serif text-5xl xl:text-7xl font-light text-[#222] mb-10 leading-[1.1]">
             Our <span className="font-serifNoto font-normal italic">Approach</span>
           </h2>

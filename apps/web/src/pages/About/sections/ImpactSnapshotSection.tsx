@@ -1,6 +1,7 @@
 import { motion, useInView, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import bgImage from "../../../assets/images/Punya_Utkal_1.png";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const stats = [
   { value: 50, suffix: "+", label: "Communities Served" },
@@ -81,9 +82,12 @@ const ImpactSnapshotSection = () => {
             viewport={{ once: true }}
             className="lg:max-w-sm"
           >
-            <p className="tracking-[0.1em] text-[0.8rem] font-bold uppercase text-primary mb-4">
-              Our Impact
-            </p>
+            <TaglineBadge 
+              text="Our Impact" 
+              alignment="left" 
+              textColor="text-white"
+              bgClassName="bg-primary/40 border-primary/20 backdrop-blur-sm"
+            />
 
             <h2 className="font-serif text-5xl xl:text-7xl font-light text-background mb-10 leading-[1.1]">
               Impact

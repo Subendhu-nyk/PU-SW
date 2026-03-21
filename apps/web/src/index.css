@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @layer base {
   :root {
@@ -169,4 +169,54 @@
   100% {
     background-size: 100% 2px, 2px 100%; /* left draws */
   }
+}
+
+/* Vertical infinite scroll animation */
+@keyframes scroll-up {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scroll-down {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.scroll-track-up {
+  animation: scroll-up 28s linear infinite;
+}
+
+.scroll-track-down {
+  animation: scroll-down 22s linear infinite;
+}
+
+.scroll-track-up:hover,
+.scroll-track-down:hover {
+  animation-play-state: paused;
+}
+
+/* Fade edges top + bottom */
+.scroll-fade-mask {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+/* Input focus ring using primary */
+.form-input {
+  @apply w-full rounded-lg bg-muted border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-all duration-200;
+}
+.form-input:focus {
+  @apply border-primary ring-2 ring-primary/20;
 }

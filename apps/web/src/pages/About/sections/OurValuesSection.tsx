@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { OurValuesData, OurValuesIntroData } from "@/shared/constants/about.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const OurValuesSection = () => {
   return (
@@ -15,9 +16,7 @@ const OurValuesSection = () => {
           >
             {OurValuesIntroData.map((intro, index) => (
               <div key={index}>
-                <p className="tracking-[0.1em] text-[0.8rem] font-bold uppercase text-primary mb-4">
-                  {intro.tagline}
-                </p>
+                <TaglineBadge text={intro.tagline} alignment="left" />
 
                 <h2 className="font-serif text-5xl xl:text-7xl font-light text-[#222] mb-10 leading-[1.1]">
                   {intro.headingLine1}

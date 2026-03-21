@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { actionsSectionData } from "@/shared/constants/homepage.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const ActionSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,6 +32,7 @@ const ActionSection = () => {
             <div className="relative mx-auto max-w-[92rem] px-6">
                 {/* Heading */}
                 <div className="text-center mb-14">
+                    <TaglineBadge text="GET INVOLVED" alignment="center" />
                     <h2 className="text-[38px] md:text-[44px] leading-[1.05] text-slate-900">
                         <span className="font-serifNoto font-normal italic">
                             One minute of your time can help{" "}

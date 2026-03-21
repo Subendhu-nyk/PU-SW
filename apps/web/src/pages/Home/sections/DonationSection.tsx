@@ -1,6 +1,7 @@
 import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Heart_Odisha from "@/assets/images/Heart_Odisha.png";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const DonationSection = () => {
     return (
@@ -16,6 +17,7 @@ const DonationSection = () => {
             <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
                 {/* Text Content */}
                 <div className="flex-1 space-y-6">
+                    <TaglineBadge text="SUPPORT US" alignment="left" />
                     <h2 className="text-3xl md:text-4xl leading-8 font-serif font-semibold text-slate-900">
                         Carrying your love to every soul in Odisha
                     </h2>

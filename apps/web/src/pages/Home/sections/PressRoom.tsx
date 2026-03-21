@@ -1,6 +1,7 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { pressItemData } from "@/shared/constants/homepage.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 
 const PressRoom = () => {
@@ -18,6 +19,7 @@ const PressRoom = () => {
                 }}
             />
             <div className="relative z-10 max-w-[1100px] mx-auto px-6 md:px-12">
+                <TaglineBadge text="IN THE NEWS" alignment="center" />
                 <h2 className="text-2xl md:text-5xl font-serif font-semibold tracking-tight text-slate-900 text-center mb-12">
                     From the press room
                 </h2>

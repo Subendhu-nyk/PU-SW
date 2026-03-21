@@ -3,7 +3,7 @@ import OurVisionSection from "./sections/OurVisionSection";
 import VisionTransformSystemsSection from "./sections/TransformSystemsSection";
 import VisionOurPathSection from "./sections/OurPathSection";
 import VisionValuesSection from "./sections/ValuesSection";
-import EmpoweringCommunitySection from "./sections/EmpoweringCommunitySection";
+import StatCounterSection from "@/shared/components/StatCounterSection";
 import SubscriptionSection from "@/shared/components/SubscriptionSection";
 import VisionTickerSection from "./sections/TickerSection";
 import ImageBannerSection from "@/shared/components/ImageBannerSection";
@@ -13,7 +13,8 @@ import {
   VisionCtaData, 
   VisionFightGlobalData, 
   VisionForThePeopleData, 
-  VisionBeTheChangeData 
+  VisionBeTheChangeData,
+  VisionGlobalForceData
 } from "@/shared/constants/vision.data";
 
 const VisionPage = () => {
@@ -43,7 +44,14 @@ const VisionPage = () => {
                     topHeading={VisionFightGlobalData.line1}
                     mainHeading={VisionFightGlobalData.line2}
                 />
-                <EmpoweringCommunitySection />
+                <StatCounterSection
+                    tagline={VisionGlobalForceData.tagline}
+                    heading1={VisionGlobalForceData.heading1}
+                    heading2={VisionGlobalForceData.heading2}
+                    stats={VisionGlobalForceData.stats}
+                    taglineStyle="badge"
+                    taglineAlignment="center"
+                />
                 <SubscriptionSection
                     headingLine1={VisionCtaData.headingLine1}
                     headingLine2={VisionCtaData.headingLine2}

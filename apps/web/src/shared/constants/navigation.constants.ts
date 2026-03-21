@@ -55,7 +55,7 @@ export const navLinks = [
         {
           links: [
             { name: "Make a donation", href: "#" },
-            { name: "Volunteer", href: "#" },
+            { name: "Volunteer", href: "/volunteer" },
             { name: "Partner with us", href: "#" },
             { name: "Fundraise", href: "#" },
           ],
@@ -106,7 +106,7 @@ export const footerSections = [
     title: "Take action",
     links: [
       { name: "Make a donation", href: "#" },
-      { name: "Volunteer", href: "#" },
+      { name: "Volunteer", href: "/volunteer" },
       { name: "Partner with us", href: "#" },
       { name: "Fundraise", href: "#" },
     ],

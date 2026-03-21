@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { HeartHandshake, BookType, ShipWheel } from "lucide-react";
 import transformImage from "@/assets/images/Development_Farm.png";
 import { VisionTransformSystemsData } from "@/shared/constants/vision.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const iconMap = {
   HeartHandshake,
@@ -37,9 +38,7 @@ const VisionTransformSystemsSection = () => {
 
           {/* Text */}
           <motion.div {...fadeInUp}>
-            <p className="tracking-[0.1em] text-[0.8rem] font-bold uppercase text-primary mb-4">
-              {VisionTransformSystemsData.tagline}
-            </p>
+            <TaglineBadge text={VisionTransformSystemsData.tagline} alignment="left" />
             <h2 className="font-serif text-5xl xl:text-7xl font-light text-[#222] mb-4 leading-[1.1]">
               {VisionTransformSystemsData.heading}
             </h2>

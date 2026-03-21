@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import konarkbg from "@/assets/images/konark-1.jpg";
+import TaglineBadge from "./TaglineBadge";
 
 interface SubscriptionSectionProps {
     tag?: string;
@@ -50,9 +51,12 @@ const SubscriptionSection = ({
 
             <div className="relative z-10 max-w-[700px] mx-auto px-8 py-20 md:py-28 text-center">
                 {/* Tag */}
-                <span className="inline-block text-xs font-bold uppercase tracking-[0.25em] text-white mb-5">
-                    {tag}
-                </span>
+                <TaglineBadge 
+                    text={tag} 
+                    alignment="center" 
+                    textColor="text-white"
+                    bgClassName="bg-primary border-primary/20 backdrop-blur-sm"
+                />
 
                 {/* Heading */}
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight mb-2">

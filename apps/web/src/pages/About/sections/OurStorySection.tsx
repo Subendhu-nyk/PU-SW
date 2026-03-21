@@ -8,7 +8,8 @@ import {
 import storyImage1 from "@/assets/images/konark-1.jpg";
 import storyImage2 from "@/assets/images/Development_Farm.png";
 import storyImage3 from "@/assets/images/konark-1.jpg";
-import { StoryIntroData,StoryTimelineData } from "@/shared/constants/about.data";
+import { StoryIntroData, StoryTimelineData } from "@/shared/constants/about.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 
 
@@ -79,9 +80,7 @@ const DesktopTimeline = () => {
                 <div className="w-6/12 h-full flex flex-col justify-center pr-16 relative">
                     {StoryIntroData.map((data, index) => (
                         <Fragment key={index}>
-                            <p className="text-primary tracking-[0.1em] text-[0.8rem] font-bold uppercase text-[#c27c2f] mb-4">
-                                {data.tagline}
-                            </p>
+                            <TaglineBadge text={data.tagline} alignment="left" />
                             <h2 className="font-serif text-5xl xl:text-7xl font-light text-[#222] mb-10 leading-[1.1]">
                                 {data.headingLine1}
                                 <br />
@@ -171,9 +170,7 @@ const MobileTimeline = () => {
             <div className="mb-16">
                 {StoryIntroData.map((data, index) => (
                     <Fragment key={index}>
-                        <p className="text-primary tracking-[0.2em] text-[0.8rem] font-bold uppercase mb-4 text-center">
-                            {data.tagline}
-                        </p>
+                        <TaglineBadge text={data.tagline} />
                         <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#222] mb-10 leading-[1.1] text-center">
                             {data.headingLine1}
                             <br />

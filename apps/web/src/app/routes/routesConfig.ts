@@ -27,6 +27,7 @@ const LeadershipPage = lazy(() => import('../../pages/Leadership/LeadershipPage'
 const AboutPage = lazy(() => import('../../pages/About/AboutPage'));
 const VisionPage = lazy(() => import('../../pages/Vision/VisionPage'));
 const WhatWeDoPage = lazy(() => import('../../pages/WhatWeDo/WhatWeDoPage'));
+const VolunteerPage = lazy(() => import('../../pages/Volunteer/VolunteerPage'));
 
 // ---------------------------------------------------------------------------
 // ROUTES CONFIGURATION
@@ -49,6 +50,10 @@ const routesConfig: RouteConfig[] = [
     {
         path: '/what-we-do',
         component: WhatWeDoPage,
+    },
+    {
+        path: '/volunteer',
+        component: VolunteerPage,
     },
     // Example routes (uncomment when components are created):
     // {

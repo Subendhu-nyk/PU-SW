@@ -8,6 +8,7 @@ import {
     LucideIcon,
 } from "lucide-react";
 import { FEATURE_ACTIONS_DATA } from "@/shared/constants/homepage.data";
+import TaglineBadge from "@/shared/components/TaglineBadge";
 
 const ICON_MAP: Record<string, any> = {
     HandHeart,
@@ -30,9 +31,7 @@ const FeatureActionGridSection = () => {
             />
             <div className="relative z-10 mx-auto max-w-6xl px-6">
                 <div className="text-center">
-                    <p className="text-xs tracking-[0.35em] text-slate-400">
-                        AWESOME FEATURE
-                    </p>
+                    <TaglineBadge text="AWESOME FEATURE" alignment="center" />
                     <h2 className="mt-4 font-serif text-5xl font-semibold tracking-tight text-slate-900">
                         How Could You Help
                     </h2>
