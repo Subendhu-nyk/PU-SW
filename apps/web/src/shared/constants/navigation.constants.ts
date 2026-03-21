@@ -10,7 +10,7 @@ export const navLinks = [
             { name: "About punya utkal", href: "/about-punya-utkal" },
             { name: "Our leadership", href: "/our-leadership" },
             { name: "Our mission & vision", href: "/vision-and-mission" },
-            { name: "Press room", href: "#" },
+            // { name: "Press room", href: "#" },
           ],
         },
       ],
@@ -56,8 +56,8 @@ export const navLinks = [
           links: [
             { name: "Make a donation", href: "#" },
             { name: "Volunteer", href: "/volunteer" },
-            { name: "Partner with us", href: "#" },
-            { name: "Fundraise", href: "#" },
+            // { name: "Partner with us", href: "#" },
+            // { name: "Fundraise", href: "#" },
           ],
         },
       ],
@@ -74,7 +74,7 @@ export const navLinks = [
             { name: "Press releases", href: "#" },
             { name: "Blog", href: "#" },
             { name: "Events", href: "#" },
-            { name: "Impact stories", href: "#" },
+            // { name: "Impact stories", href: "#" },
           ],
         },
       ],
@@ -89,7 +89,7 @@ export const footerSections = [
       { name: "About punya utkal", href: "/about-punya-utkal" },
       { name: "Our leadership", href: "/our-leadership" },
       { name: "Mission & vision", href: "/vision-and-mission" },
-      { name: "Press room", href: "#" },
+      // { name: "Press room", href: "#" },
     ],
   },
   {
@@ -107,8 +107,8 @@ export const footerSections = [
     links: [
       { name: "Make a donation", href: "#" },
       { name: "Volunteer", href: "/volunteer" },
-      { name: "Partner with us", href: "#" },
-      { name: "Fundraise", href: "#" },
+      // { name: "Partner with us", href: "#" },
+      // { name: "Fundraise", href: "#" },
     ],
   },
   {
@@ -117,7 +117,7 @@ export const footerSections = [
       { name: "Press releases", href: "#" },
       { name: "Blog", href: "#" },
       { name: "Events", href: "#" },
-      { name: "Impact stories", href: "#" },
+      // { name: "Impact stories", href: "#" },
     ],
   },
 ];
