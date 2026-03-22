@@ -28,6 +28,9 @@ const AboutPage = lazy(() => import('../../pages/About/AboutPage'));
 const VisionPage = lazy(() => import('../../pages/Vision/VisionPage'));
 const WhatWeDoPage = lazy(() => import('../../pages/WhatWeDo/WhatWeDoPage'));
 const VolunteerPage = lazy(() => import('../../pages/Volunteer/VolunteerPage'));
+const PressRoomPage = lazy(() => import('../../pages/PressRoom/PressRoomPage'));
+const PressReleasesPage = lazy(() => import('../../pages/PressRoom/PressReleasesPage'));
+const NewsDetailPage = lazy(() => import('../../pages/PressRoom/NewsDetailPage'));
 
 // ---------------------------------------------------------------------------
 // ROUTES CONFIGURATION
@@ -55,12 +58,18 @@ const routesConfig: RouteConfig[] = [
         path: '/volunteer',
         component: VolunteerPage,
     },
-    // Example routes (uncomment when components are created):
-    // {
-    //   path: '/admin-dashboard',
-    //   component: AdminDashboard,
-    //   requiredRole: 'admin',
-    // },    
+    {
+        path: '/press-room',
+        component: PressRoomPage,
+    },
+    {
+        path: '/press-room/releases',
+        component: PressReleasesPage,
+    },
+    {
+        path: '/press-room/releases/:slug',
+        component: NewsDetailPage,
+    },
 ];
 
 export default routesConfig;

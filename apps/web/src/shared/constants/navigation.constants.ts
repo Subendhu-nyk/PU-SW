@@ -10,7 +10,7 @@ export const navLinks = [
             { name: "About punya utkal", href: "/about-punya-utkal" },
             { name: "Our leadership", href: "/our-leadership" },
             { name: "Our mission & vision", href: "/vision-and-mission" },
-            // { name: "Press room", href: "#" },
+            // { name: "Press room", href: "/press-room" },
           ],
         },
       ],
@@ -71,7 +71,7 @@ export const navLinks = [
       columns: [
         {
           links: [
-            { name: "Press releases", href: "#" },
+            { name: "Press room", href: "/press-room" },
             { name: "Blog", href: "#" },
             { name: "Events", href: "#" },
             // { name: "Impact stories", href: "#" },
@@ -89,7 +89,7 @@ export const footerSections = [
       { name: "About punya utkal", href: "/about-punya-utkal" },
       { name: "Our leadership", href: "/our-leadership" },
       { name: "Mission & vision", href: "/vision-and-mission" },
-      // { name: "Press room", href: "#" },
+      // { name: "Press room", href: "/press-room" },
     ],
   },
   {
@@ -114,7 +114,7 @@ export const footerSections = [
   {
     title: "News & updates",
     links: [
-      { name: "Press releases", href: "#" },
+      { name: "Press room", href: "/press-room" },
       { name: "Blog", href: "#" },
       { name: "Events", href: "#" },
       // { name: "Impact stories", href: "#" },
